@@ -23,4 +23,8 @@ describe('AddStepBtnComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('shoud have Cancel button', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('a.btn-danger').textContent).toContain('Cancel');
+  });
 });
