@@ -24,4 +24,8 @@ describe('Step3Component', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('shoud contain app-add-step-btn component', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.getElementsByTagName('app-add-step-btn').length).toBe(1);
+  });
 });
